@@ -4,6 +4,9 @@ output: html_document
 ---
 ```{r setuo, echo=FALSE, message=FALSE}
 library(tidyverse)
+library(readxl)
+library(haven)
+
 ```
 This document will show how to import data.
 
@@ -68,7 +71,24 @@ litters_df =
   )
 
 ```
+##import an excel file
+
+Import MLB 2011 summary data.
+```{r}
+mlb_df = read_excel("data/mlb11.xlsx", sheet ="mlb11")
 ```
+
+##Import SAS data
+```{r}
+
+pulse_df = read_sas("data/public_pulse_data.sas7bdat")
+
+
+```
+##never use read.csv()
+
+
+
 
 
 
