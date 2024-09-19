@@ -88,6 +88,8 @@ pulse_df = read_sas("data/public_pulse_data.sas7bdat")
 ##never use read.csv()
 
 
+Data manipulate
+
 
 
 
